@@ -3,152 +3,85 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+* {
+  box-sizing: border-box;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
 </style>
 </head>
 <body>
-
-<h2>ATV Racers</h2>
-<p>Click on the button to choose your racer.</p>
-
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Rider1</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Jerry</a>
-    <a href="#about">Defgoingtowin</a>
-    <a href="#contact">Imfastasfuqboi</a>
+<h2><center>Racers</center></h2>
+<div class="row">
+  <div class="column" style="background-color:tomato;">
+  <h2>ATVs</h2>
+  <label for="AtvRacers">Racer1</label>
+  <select name="AtvRacers" id="AtvRacers">
+    <option value="Select">Select</option>
+    <option value="Steve">Steve</option>
+    <option value="Dave">Dave</option>
+    <option value="Jerry">Jerry</option>
+    <option value="Louise">Louise</option>
+  </select>
+  <label for="AtvRacers">Racer2</label>
+  <select name="AtvRacers" id="AtvRacers">
+    <option value="Select">Select</option>
+    <option value="Steve">Steve</option>
+    <option value="Dave">Dave</option>
+    <option value="Jerry">Jerry</option>
+    <option value="Louise">Louise</option>
+  </select>
+  <label for="AtvRacers">Racer3</label>
+  <select name="AtvRacers" id="AtvRacers">
+    <option value="Select">Select</option>
+    <option value="Steve">Steve</option>
+    <option value="Dave">Dave</option>
+    <option value="Jerry">Jerry</option>
+    <option value="Louise">Louise</option>
+  </select>
   </div>
-</div>
-<p></p>
 
-<div class="dropdown">
-  <button onclick="myFunction2()" class="dropbtn">Rider2</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Tom</a>
-    <a href="#about">Wolfy</a>
-    <a href="#contact">Louise</a>
+  <div class="column" style="background-color:powderblue;">
+  <h2>Bikes</h2>
+  <label for="BikeRacers">Racer1</label>
+  <select name="BikeRacers" id="BikeRacers">
+    <option value="Select">Select</option>
+    <option value="Flattire">Flattire</option>
+    <option value="Imfastasfuqboi">Imfastasfuqboi</option>
+    <option value="alwaysbreaksdown">alwaysbreaksdown</option>
+    <option value="canisharemyscreen">canisharemyscreen</option>
+  </select>
+  <label for="BikeRacers">Racer2</label>
+  <select name="BikeRacers" id="BikeRacers">
+    <option value="Select">Select</option>
+    <option value="Flattire">Flattire</option>
+    <option value="Imfastasfuqboi">Imfastasfuqboi</option>
+    <option value="alwaysbreaksdown">alwaysbreaksdown</option>
+    <option value="canisharemyscreen">canisharemyscreen</option>
+  </select>
+  <label for="BikeRacers">Racer3</label>
+  <select name="BikeRacers" id="BikeRacers">
+    <option value="Select">Select</option>
+    <option value="Flattire">Flattire</option>
+    <option value="Imfastasfuqboi">Imfastasfuqboi</option>
+    <option value="alwaysbreaksdown">alwaysbreaksdown</option>
+    <option value="canisharemyscreen">canisharemyscreen</option>
+  </select>
   </div>
-</div>
-<p></p>
-
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Rider3</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Racernumber3</a>
-    <a href="#about">Alwaysgetsaflattire</a>
-    <a href="#contact">Probablyshouldpickadifferentsport</a>
-  </div>
-</div>
-<p></p>
-
-<h2>Bike Racers</h2>
-<p>Click on the button to choose your racer.</p>
-
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Rider1</button>
-  <div id="myDropdown2" class="dropdown-content">
-    <a href="#racer1">Jerry</a>
-    <a href="#racer2">Defgoingtowin</a>
-    <a href="#racer3">Imfastasfuqboi</a>
-  </div>
-</div>
-<p></p>
-
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Rider2</button>
-  <div id="myDropdown2" class="dropdown-content">
-    <a href="#home">Tom</a>
-    <a href="#about">Wolfy</a>
-    <a href="#contact">Louise</a>
-  </div>
-</div>
-<p></p>
-
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Rider3</button>
-  <div id="myDropdown2" class="dropdown-content">
-    <a href="#home">Racernumber3</a>
-    <a href="#about">Alwaysgetsaflattire</a>
-    <a href="#contact">Probablyshouldpickadifferentsport</a>
-  </div>
-</div>
-<p></p>
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-function myFunction2() {
-  document.getElementById("myDropdown2").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+  <center><input type="submit" value="Submit"></center>
 
 </body>
 </html>
